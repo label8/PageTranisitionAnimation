@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,17 +20,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kTQ-Wa-mXm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="235"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="250.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="235" id="iWP-Qp-fAH"/>
+                                    <constraint firstAttribute="width" secondItem="kTQ-Wa-mXm" secondAttribute="height" multiplier="6:4" id="mjn-td-uyR"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kTQ-Wa-mXm" firstAttribute="top" secondItem="FUJ-Sc-aqc" secondAttribute="top" id="AcG-8U-ORp"/>
-                            <constraint firstItem="kTQ-Wa-mXm" firstAttribute="leading" secondItem="FUJ-Sc-aqc" secondAttribute="leading" id="nW2-93-E8j"/>
-                            <constraint firstItem="kTQ-Wa-mXm" firstAttribute="trailing" secondItem="FUJ-Sc-aqc" secondAttribute="trailing" id="pkI-Vf-Rmm"/>
+                            <constraint firstItem="kTQ-Wa-mXm" firstAttribute="top" secondItem="FUJ-Sc-aqc" secondAttribute="top" id="Gzd-Ya-zFX"/>
+                            <constraint firstItem="kTQ-Wa-mXm" firstAttribute="leading" secondItem="FUJ-Sc-aqc" secondAttribute="leading" id="HSQ-UC-ovs"/>
+                            <constraint firstAttribute="trailing" secondItem="kTQ-Wa-mXm" secondAttribute="trailing" id="kgG-1L-P2p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FUJ-Sc-aqc"/>
                     </view>

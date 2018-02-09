@@ -54,6 +54,9 @@ extension CustomTransitionController: UIViewControllerAnimatedTransitioning {
         containerView.addSubview(toVC.view)
         containerView.addSubview(animationView)
         
+        // 遷移先のビューを再描画しておかないと画像がスムーズにぴったりフィットしない
+        toVC.view.layoutIfNeeded()
+        
         UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
             // 遷移後のビューを徐々に表示する
             toVC.view.alpha = 1.0
